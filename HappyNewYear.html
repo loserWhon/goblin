@@ -25,7 +25,25 @@
     position: absolute;
   }
 </style>
-
+<audio id="bgMusic"   autoplay="autoplay" loop="loop">
+  <source src="https://music.163.com/song/media/outer/url?id=1340371080.mp3">
+</audio>
+<script type="text/javascript">
+  window.onload=function () {
+    let oA=document.querySelector("#bgMusic");
+    let timer=null;
+    function autoPlay() {
+      if (oA.paused) {
+        oA.paused=false;
+        oA.volume=0.5;
+        oA.play();
+      }else {
+        clearInterval(timer);
+      }
+    }
+    timer=setInterval(autoPlay,1);
+  }
+</script>
 <body>
 
 <canvas></canvas>
@@ -35,7 +53,7 @@
 <script>
 
   function GetRequest() {
-    var url = decodeURI(location.search); //获取url中"?"符后的字串
+    var url = decodeURI(location.search);
     var theRequest = new Object();
     if (url.indexOf("?") != -1) {
       var str = url.substr(1);
