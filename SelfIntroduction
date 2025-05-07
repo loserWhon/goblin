@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于王鸿生</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            position: relative;
+            height: 400px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        nav input {
+            padding: 5px;
+            width: 200px;
+        }
+
+        .search-btn {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .language-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-menu li {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .language-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .logo-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .about-section {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .about-section h1 {
+            margin-bottom: 15px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .caret {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            display: inline-block;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .qrcode-container img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">王鸿生</a>
+
+
+        </nav>
+        <div class="header-bg" style="background-image: url('cityscape.jpg');"></div>
+        <div class="logo-container">
+            <img src="http://127.0.0.1:8300/images/logo-mini.png" alt="王鸿生" class="logo-img">
+        </div>
+    </header>
+    <main>
+        <section class="about-section">
+            <h1>关于王鸿生</h1>
+
+            <p>欢迎来到王鸿生个人链接，这里是我设计联名物品</p>
+
+
+            <div class="qrcode-container">
+                <img src="http://127.0.0.1:8300/images/t1.png" alt="ZARA 联名郑州轻工业大学T恤">
+                <img src="http://127.0.0.1:8300/images/t2.png" alt="DiRo 联名郑州轻工业大学抱枕">
+
+            </div>
+        </section>
+        <section class="about-section">
+            <h1>关于王鸿生</h1>
+
+            <p>欢迎来到王鸿生个人链接，这里是我微信二维码</p>
+
+            <div class="qrcode-container">
+            
+                <img src="http://127.0.0.1:8300/images/whs二维码.jpg" alt="王鸿生个人二维码">
+            </div>
+
+        </section>
+    </main>
+    <script>
+        // 这里暂时没有复杂交互逻辑，先留空
+        // 后续如果有搜索功能、按钮交互等需求再添加代码
+    </script>
+</body>
+
+</html>    
