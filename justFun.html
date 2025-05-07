@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毕设娱乐页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "MV Boli", cursive;
+        }
+        body {
+            background: #111;
+        }
+        h2 {
+            display: flex;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 8vw;
+            position: relative;
+        }
+        h2::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: scaleY(-1);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, transparent 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-top: 10px;
+        }
+        h2 span:nth-child(6) {
+            margin-left: 5vw;
+        }
+        h2 span {
+            animation: LetterColor 3s linear infinite;
+            animation-delay: calc(0.1s * var(--o));
+        }
+        @keyframes LetterColor {
+            0% {
+                color: #fff;
+                text-shadow: 
+                0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 120px #00b3ff,
+                0 0 200px #00b3ff,
+                0 0 300px #00b3ff,
+                0 0 400px #00b3ff;
+                filter: blur(2px) hue-rotate(0deg);
+            }
+            30%,
+            70% {
+                color: #fff;
+                text-shadow: 
+                0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 120px #00b3ff,
+                0 0 200px #00b3ff;
+                filter: blur(2px) hue-rotate(360deg);
+            }
+            100% {
+                color: transparent;
+                text-shadow: none;
+                filter: blur(2px) hue-rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 data-text="欢迎来到我的毕设系统">
+        <span style="--o:1">欢</span>
+        <span style="--o:2">迎</span>
+        <span style="--o:3">来</span>
+        <span style="--o:4">到</span>
+        <span style="--o:5">我</span>
+        <span style="--o:6">的</span>
+        <span style="--o:7">毕</span>
+        <span style="--o:8">设</span>
+        <span style="--o:9">系</span>
+        <span style="--o:10">统</span>
+    </h2>
+</body>
+</html>
+    
